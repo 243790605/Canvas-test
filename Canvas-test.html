@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas-test</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript">
+		window.onload=function(){
+			var canvas=document.getElementById("canvas");
+			canvas.width=700;
+			canvas.height=700;
+			var context=canvas.getContext("2d");//进行2D绘制
+			context.moveTo(0,0);//状态设置
+			context.lineTo(700,700);//状态设置
+			context.stroke();//绘制
+		}
+	</script>
+</body>
+</html>
